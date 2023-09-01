@@ -8,10 +8,9 @@ public class PlayerMovement : MonoBehaviour
     {
         // Get input for movement
         float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
 
         // Calculate movement direction
-        Vector3 movement = new Vector3(horizontalInput, 0f, verticalInput);
+        Vector3 movement = new Vector3(horizontalInput, 0f);
 
         // Normalize diagonal movement
         if (movement.magnitude > 1f)
