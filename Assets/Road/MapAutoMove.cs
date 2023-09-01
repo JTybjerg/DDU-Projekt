@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
-public class NewBehaviourScript : MonoBehaviour
+public class AutoMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float speed = 5f;
+
+void Update()
+{
+    transform.position = transform.position + (transform.forward * speed * Time.deltaTime);
+}
 }
