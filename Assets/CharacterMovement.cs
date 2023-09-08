@@ -1,5 +1,3 @@
-using OpenXmlPowerTools;
-using SolrNet.Utils;
 using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
