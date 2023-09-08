@@ -1,3 +1,5 @@
+
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
@@ -10,27 +12,42 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            movingRight = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            movingRight = true;
+        }
+
         MoveCharacter();
     }
 
     void MoveCharacter()
     {
+        float moveDistance = moveSpeed * Time.deltaTime;
+
         if (movingRight)
         {
-            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
-
-            if (transform.position.x >= endX)
+            if (transform.position.x < endX)
             {
-                movingRight = false;
+                transform.Translate(Vector3.right * moveDistance);
+            }
+            else
+            {
+                transform.position = new Vector3(endX, transform.position.y, transform.position.z);
             }
         }
         else
         {
-            transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
-
-            if (transform.position.x <= startX)
+            if (transform.position.x > startX)
             {
-                movingRight = true;
+                transform.Translate(Vector3.left * moveDistance);
+            }
+            else
+            {
+                transform.position = new Vector3(startX, transform.position.y, transform.position.z);
             }
         }
     }
