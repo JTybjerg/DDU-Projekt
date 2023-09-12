@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a493293e737494c9146e6ffa77f9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
 --- !u!64 &146825352
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1016,6 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a493293e737494c9146e6ffa77f9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
 --- !u!64 &1082215141
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1207,6 +1209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a493293e737494c9146e6ffa77f9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
 --- !u!64 &1309318466
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1480,6 +1483,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7eaf753d3ca87d48afe0987a6e0727c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 10
+  startX: -3.5
+  endX: 2.5
 --- !u!114 &1828072841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1492,6 +1498,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7eaf753d3ca87d48afe0987a6e0727c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
+  startX: -3.5
+  endX: 2.5
 --- !u!1001 &2129723718
 PrefabInstance:
   m_ObjectHideFlags: 0
