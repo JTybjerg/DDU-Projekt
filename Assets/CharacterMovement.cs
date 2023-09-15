@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     public float moveSpeed = 5f; // Adjust the movement speed as needed
-    public float startX = -3.5f; // Starting X-coordinate
+    public float startX = -3f; // Starting X-coordinate
     public float endX = 2.5f; // Ending X-coordinate
 
     private bool movingRight = true;
