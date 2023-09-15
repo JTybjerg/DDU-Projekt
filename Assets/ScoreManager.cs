@@ -11,11 +11,11 @@ public class ScoreManager : MonoBehaviour
     public float scoreincreasepersecond = 3f;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Scorevalue.text = ((int)scorevalue).ToString();
         scorevalue += scoreincreasepersecond * Time.fixedDeltaTime;
-        scoreincreasepersecond += 0.001f * Time.fixedDeltaTime;
+        scoreincreasepersecond += 0.5f * Time.fixedDeltaTime;
 
         
     }
