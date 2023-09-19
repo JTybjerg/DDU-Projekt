@@ -7,7 +7,7 @@ public class Gamemanager : MonoBehaviour
     public void EndGame ()
     {
         Debug.Log("GAME OVER");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
 
     }
 }
