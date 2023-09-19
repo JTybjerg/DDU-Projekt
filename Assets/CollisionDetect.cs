@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class CollisionDetect : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnCollisionEnter(Collision collisioninfo)
     {
-        
+        if (collisioninfo.collider.tag == "Obstacle")
+        {
+            FindObjectOfType<Gamemanager>().EndGame();
+
+
+        }
+
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
